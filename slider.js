@@ -1,5 +1,6 @@
 $(function(){
     var i= 0;
+	//Array for the url/filename of images
 
     var sliurl = [
             "1.png",
@@ -9,14 +10,10 @@ $(function(){
          ];
     
          var container = document.getElementById('sliderContainer');
-
+	//Appending to the selected element
          for (var z = 0, j = sliurl.length; z < j; z++) {
             $( "<img src='images/"+sliurl[z]+"' />" ).prependTo( ".sliderContainer" );
          }
-
-         
-
-
 
 	//when the next button is clicked on
 	$('.next').on("click", function(){
